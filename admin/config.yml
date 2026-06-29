@@ -1,21 +1,47 @@
 backend:
   name: github
-  repo: abdelrhmanezzat1/Alostora
+  repo: abdelrhmanezzat1/Alostora # مسار مستودعك لتحديث الملفات تلقائياً عند الضغط على حفظ
   branch: main
-  auth_type: implicit
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+media_folder: "logo.png"
+public_folder: ""
 
 collections:
-  - name: "events"
-    label: "المعارض والمؤتمرات القادمة"
-    folder: "data/events"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "عنوان المعرض/المؤتمر", name: "title", widget: "string" }
-      - { label: "تاريخ البدء والوقت", name: "date", widget: "datetime" }
-      - { label: "مقر الفعالية والمدينة", name: "location", widget: "string" }
-      - { label: "صورة الغلاف والبنر", name: "image", widget: "image" }
-      - { label: "التفاصيل والأجندة بالكامل", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "تعديل محتوى الصفحات"
+    delete: false
+    editor:
+      preview: false
+    files:
+      # التحكم في الصفحة الرئيسية
+      - file: "index.html"
+        label: "الصفحة الرئيسية"
+        name: "index"
+        fields:
+          - {label: "العنوان الرئيسي الملون", name: "hero_title", widget: "string"}
+          - {label: "الوصف تحت العنوان", name: "hero_desc", widget: "text"}
+          - {label: "رقم الواتساب المباشر", name: "whatsapp_num", widget: "string"}
+          
+      # التحكم في صفحة الخدمات
+      - file: "services.html"
+        label: "صفحة الخدمات"
+        name: "services"
+        fields:
+          - {label: "عنوان الصفحة العلوي", name: "services_title", widget: "string"}
+          - {label: "قائمة الخدمات (إضافة وحذف بأزرار)", name: "services_list", widget: "list", fields: [
+              {label: "اسم الخدمة الجديدة", name: "title", widget: "string"},
+              {label: "أيقونة الخدمة (FontAwesome)", name: "icon", widget: "string"},
+              {label: "شرح وتفاصيل الخدمة", name: "desc", widget: "text"}
+            ]}
+
+      # التحكم في صفحة معرض الأعمال
+      - file: "portfolio.html"
+        label: "صفحة أعمالنا"
+        name: "portfolio"
+        fields:
+          - {label: "عنوان المعرض الرئيسي", name: "portfolio_title", widget: "string"}
+          - {label: "إضافة عمل جديد للمعرض (بأزرار)", name: "portfolio_list", widget: "list", fields: [
+              {label: "اسم المشروع أو المعرض", name: "project_name", widget: "string"},
+              {label: "تصنيف العمل", name: "category", widget: "string"},
+              {label: "رابط صورة العمل", name: "image_url", widget: "string"}
+            ]}
