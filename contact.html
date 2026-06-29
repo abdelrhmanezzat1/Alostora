@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | الأسطورة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { navyDark: '#0F172A', goldLuxury: '#D4AF37' } } } }
+    </script>
+    <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="bg-navyDark text-white border-b border-goldLuxury/30 sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="logo.png" alt="شعار الأسطورة" class="h-14 w-auto object-contain bg-white p-1 rounded-md">
+            </a>
+            <div class="hidden md:flex space-x-8 space-x-reverse text-sm font-semibold">
+                <a href="index.html" class="hover:text-goldLuxury transition">الرئيسية</a>
+                <a href="services.html" class="hover:text-goldLuxury transition">خدماتنا</a>
+                <a href="portfolio.html" class="hover:text-goldLuxury transition">أعمالنا</a>
+                <a href="contact.html" class="text-goldLuxury">اتصل بنا</a>
+            </div>
+            <a href="https://wa.me/201000468349" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2.5 rounded-md font-bold text-xs flex items-center gap-2 transition">
+                <i class="fa-brands fa-whatsapp text-lg"></i> واتساب مباشر
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-navyDark text-white py-16 text-center border-b-4 border-goldLuxury">
+        <h1 class="text-4xl font-black text-goldLuxury mb-4">يسعدنا تواصلكم معنا</h1>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-16 max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-6 text-right">
+            <h3 class="text-2xl font-black text-navyDark mb-6">قنوات الاتصال المباشر</h3>
+            <!-- الهاتف الجديد المحدث -->
+            <div class="flex items-center gap-4 p-5 bg-white rounded-xl shadow-sm border border-slate-200">
+                <div class="w-12 h-12 bg-navyDark text-goldLuxury flex items-center justify-center rounded-lg text-xl"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                    <span class="block text-xs text-slate-400">رقم الهاتف الرسمي</span>
+                    <span class="font-bold text-navyDark text-lg" dir="ltr">01000468349</span>
+                </div>
+            </div>
+            <!-- زر الواتساب الكبير المباشر -->
+            <a href="https://wa.me/201000468349" target="_blank" class="flex items-center gap-4 p-5 bg-green-50 hover:bg-green-100 rounded-xl shadow-sm border border-green-200 transition cursor-pointer">
+                <div class="w-12 h-12 bg-green-600 text-white flex items-center justify-center rounded-lg text-xl"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                    <span class="block text-xs text-green-600 font-bold">مراسلة فورية</span>
+                    <span class="font-bold text-slate-800 text-md">اضغط هنا لفتح محادثة واتساب مباشرة</span>
+                </div>
+            </a>
+        </div>
+
+        <form class="space-y-4 text-right bg-white p-8 rounded-2xl shadow-md border border-slate-200">
+            <h3 class="text-lg font-bold text-navyDark mb-2">أرسل تفاصيل حدثك الآن</h3>
+            <div>
+                <input type="text" placeholder="الاسم الكامل" class="w-full p-3 rounded-lg border border-slate-300 text-sm" required>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-goldLuxury text-navyDark py-3 rounded-lg font-bold transition">إرسال الطلب</button>
+        </form>
+    </section>
+
+    <footer class="bg-navyDark text-slate-400 py-8 text-center">
+        <p class="text-xs">جميع الحقوق محفوظة &copy; 2026 شركة الأسطورة.</p>
+    </footer>
+</body>
+</html>
