@@ -2,7 +2,7 @@ backend:
   name: github
   repo: abdelrhmanezzat1/Alostora
   branch: main
-  base_url: https://api.github.com
+  auth_type: implicit
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
