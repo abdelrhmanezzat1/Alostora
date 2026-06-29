@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/alostoura-website # ⚠️ استبدل YOUR_GITHUB_USERNAME باسم حسابك في جيتهاب بدقة
+  repo: abdelrhman ezzat1/alostoura-website # ⚠️ استبدل YOUR_GITHUB_USERNAME باسم حسابك في جيتهاب بدقة
   branch: main
 
 media_folder: "assets/images"
