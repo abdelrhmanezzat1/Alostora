@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: abdelrhman ezzat1/Alostora # ⚠️ استبدل YOUR_GITHUB_USERNAME باسم حسابك في جيتهاب بدقة
+  repo: abdelrhmanezzat1/Alostora
   branch: main
+  base_url: https://api.github.com
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
@@ -18,12 +19,3 @@ collections:
       - { label: "مقر الفعالية والمدينة", name: "location", widget: "string" }
       - { label: "صورة الغلاف والبنر", name: "image", widget: "image" }
       - { label: "التفاصيل والأجندة بالكامل", name: "body", widget: "markdown" }
-
-  - name: "services"
-    label: "إدارة الخدمات الأساسية"
-    folder: "data/services"
-    create: true
-    fields:
-      - { label: "اسم الخدمة للشركة", name: "title", widget: "string" }
-      - { label: "أيقونة الخدمة (FontAwesome)", name: "icon", widget: "string" }
-      - { label: "شرح مفصل للخدمة", name: "description", widget: "text" }
