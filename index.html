@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسطورة لتنظيم المعارض والمؤتمرات | الفخامة والاحترافية</title>
+    
+    <!-- تهيئة محركات البحث (SEO) -->
+    <meta name="description" content="شركة الأسطورة لتنظيم المعارض والمؤتمرات الدولية والمحلية، تجهيز أجنحة، أنظمة تسجيل، حلول متكاملة لإدارة الفعاليات بمستوى فخم وعالمي.">
+    <meta name="keywords" content="تنظيم معارض، تنظيم مؤتمرات، تجهيز معارض، الأسطورة للفعاليات، إدارة مؤتمرات">
+    
+    <!-- Tailwind CSS & Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navyDark: '#0F172A',
+                        goldLuxury: '#D4AF37',
+                        lightGray: '#F5F5F5'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%); }
+    </style>
+    <!-- Netlify Identity لربط لوحة التحكم تلقائياً -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- شريط التنقل العلوي (Navbar) -->
+    <nav class="bg-navyDark text-white border-b border-goldLuxury/30 sticky top-0 z-50 shadow-xl backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- الشعار النصي (يمكنك استبداله بـ <img> لشعارك لاحقاً) -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 border-2 border-goldLuxury flex items-center justify-center rounded-lg rotate-45">
+                    <span class="text-goldLuxury font-black -rotate-45 text-xl">أ</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black text-goldLuxury tracking-wide leading-tight">الأسطورة</span>
+                    <span class="text-[9px] text-slate-400 tracking-widest">لتنظيم المعارض والمؤتمرات</span>
+                </div>
+            </div>
+            
+            <!-- القائمة اللاسلكية للموقع -->
+            <div class="hidden md:flex space-x-8 space-x-reverse text-sm font-semibold">
+                <a href="#home" class="text-goldLuxury">الرئيسية</a>
+                <a href="#about" class="hover:text-goldLuxury transition">من نحن</a>
+                <a href="#services" class="hover:text-goldLuxury transition">خدماتنا</a>
+                <a href="#portfolio" class="hover:text-goldLuxury transition">أعمالنا</a>
+                <a href="#upcoming" class="hover:text-goldLuxury transition">الفعاليات القادمة</a>
+                <a href="#contact" class="hover:text-goldLuxury transition">اتصل بنا</a>
+            </div>
+            
+            <!-- زر الحجز الفوري -->
+            <a href="#contact" class="gold-gradient text-navyDark px-5 py-2.5 rounded-md font-bold text-sm shadow-md hover:opacity-90 transition">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- البانر الرئيسي الترحيبي (Hero Section) -->
+    <section id="home" class="relative bg-navyDark text-white py-32 lg:py-48 overflow-hidden border-b-4 border-goldLuxury">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <span class="text-goldLuxury uppercase font-bold tracking-widest text-sm bg-goldLuxury/10 px-4 py-1.5 rounded-full border border-goldLuxury/20">رؤية جديدة لإدارة الفعاليات</span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black mt-6 mb-8 leading-tight">
+                نصنع من معارضكم ومؤتمراتكم <br class="hidden sm:inline"> <span class="text-goldLuxury">حدثاً أسطورياً</span> يبقى في الذاكرة
+            </h1>
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                شركة الأسطورة متخصصة في تخطيط، تصميم، وتنفيذ أضخم المؤتمرات والمعارض الدولية بأحدث التجهيزات التقنية والديكورات الفاخرة التي تعكس رقي علامتكم التجارية.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#portfolio" class="gold-gradient text-navyDark px-8 py-3.5 rounded-md font-bold shadow-lg hover:scale-105 transition">شاهد معرض أعمالنا</a>
+                <a href="#services" class="border border-white/40 hover:border-goldLuxury hover:text-goldLuxury px-8 py-3.5 rounded-md font-bold transition">استكشف خدماتنا الاحترافية</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسـم من نحن (About Us) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-goldLuxury font-bold text-sm block mb-2">// هويتنا وقيمنا</span>
+                    <h2 class="text-3xl font-black text-navyDark mb-6">شركة الأسطورة لتنظيم المعارض والمؤتمرات</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed text-justify">
+                        نحن شركة رائدة في مجال إدارة وتنظيم الفعاليات، ننطلق من فهم عميق لأهداف عملائنا لنصنع تجارب فريدة تجمع بين دقة التنظيم وجمال التصميم وفخامة التنفيذ الفعلي على أرض الواقع.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                        <div class="border-r-4 border-goldLuxury pr-4">
+                            <h4 class="font-bold text-navyDark mb-1">رؤيتنا</h4>
+                            <p class="text-xs text-slate-500">الوصول بمستوى الفعاليات العربية إلى المقاييس العالمية الاحترافية.</p>
+                        </div>
+                        <div class="border-r-4 border-goldLuxury pr-4">
+                            <h4 class="font-bold text-navyDark mb-1">رسالتنا</h4>
+                            <p class="text-xs text-slate-500">الالتزام بالابتكار والسرعة والفخامة لضمان نجاح كل حدث نتشرف بتنظيمه.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- لوحة الإحصائيات الفخمة -->
+                <div class="bg-navyDark text-white p-10 rounded-2xl border-b-8 border-goldLuxury shadow-2xl relative">
+                    <h3 class="text-xl font-bold text-goldLuxury mb-8"><i class="fa-solid fa-chart-line ml-2"></i> إنجازات الأسطورة بالأرقام</h3>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <span class="block text-4xl font-black text-goldLuxury mb-1">+50</span>
+                            <span class="text-xs text-slate-400">مؤتمر دولي ومحلي</span>
+                        </div>
+                        <div>
+                            <span class="block text-4xl font-black text-goldLuxury mb-1">+120</span>
+                            <span class="text-xs text-slate-400">معرض تم تجهيزه</span>
+                        </div>
+                        <div>
+                            <span class="block text-4xl font-black text-goldLuxury mb-1">+10k</span>
+                            <span class="text-xs text-slate-400">زائر ومشارك مسجل</span>
+                        </div>
+                        <div>
+                            <span class="block text-4xl font-black text-goldLuxury mb-1">100%</span>
+                            <span class="text-xs text-slate-400">نسبة رضا وثقة عملائنا</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات (Services) -->
+    <section id="services" class="py-20 bg-lightGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-goldLuxury font-bold text-sm block mb-2">// ماذا نقدم؟</span>
+            <h2 class="text-3xl font-black text-navyDark mb-12">منظومة خدماتنا المتكاملة للفعاليات والشركات</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-right">
+                <!-- خدمة 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-navyDark hover:border-goldLuxury transition">
+                    <div class="text-goldLuxury text-2xl mb-4"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <h3 class="font-bold text-lg text-navyDark mb-2">تنظيم المعارض والمؤتمرات</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">إدارة وتخطيط الفعالية بالكامل بدءاً من الفكرة وصياغة الأجندة ووصولاً لليوم الختامي.</p>
+                </div>
+                <!-- خدمة 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-navyDark hover:border-goldLuxury transition">
+                    <div class="text-goldLuxury text-2xl mb-4"><i class="fa-solid fa-building-user"></i></div>
+                    <h3 class="font-bold text-lg text-navyDark mb-2">تجهيز الأجنحة والديكور</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">تصميم وبناء أجنحة المعارض (Stands) بأحدث الخامات الخشبية والمعدنية الفاخرة.</p>
+                </div>
+                <!-- خدمة 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-navyDark hover:border-goldLuxury transition">
+                    <div class="text-goldLuxury text-2xl mb-4"><i class="fa-solid fa-id-card"></i></div>
+                    <h3 class="font-bold text-lg text-navyDark mb-2">أنظمة التسجيل الذكية</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">توفير بوابات إلكترونية للتسجيل واستخراج بطاقات الحضور والـ QR Code فورياً.</p>
+                </div>
+                <!-- خدمة 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-navyDark hover:border-goldLuxury transition">
+                    <div class="text-goldLuxury text-2xl mb-4"><i class="fa-solid fa-video"></i></div>
+                    <h3 class="font-bold text-lg text-navyDark mb-2">شاشات العرض والأنظمة الصوتية</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">تأجير وتشغيل شاشات الـ LED الضخمة، أنظمة الصوت الاحترافية، تقنيات الإضاءة والبث المباشر.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الأعمال (Portfolio) -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-goldLuxury font-bold text-sm block mb-2">// معرض أعمالنا</span>
+            <h2 class="text-3xl font-black text-navyDark mb-12">شاهد روعة التنفيذ في فعالياتنا السابقة</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- عمل 1 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg bg-navyDark text-white h-72">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition duration-500" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=600');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDark via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 right-0 p-6 text-right">
+                        <span class="text-xs text-goldLuxury font-bold tracking-wide">مؤتمر دولي</span>
+                        <h4 class="text-lg font-bold mt-1">مؤتمر الاستثمار والتنمية العصرية</h4>
+                    </div>
+                </div>
+                <!-- عمل 2 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg bg-navyDark text-white h-72">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition duration-500" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDark via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 right-0 p-6 text-right">
+                        <span class="text-xs text-goldLuxury font-bold tracking-wide">معرض تجاري</span>
+                        <h4 class="text-lg font-bold mt-1">معرض الأثاث والديكور الفاخر</h4>
+                    </div>
+                </div>
+                <!-- عمل 3 -->
+                <div class="group relative rounded-xl overflow-hidden shadow-lg bg-navyDark text-white h-72">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition duration-500" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=600');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDark via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 right-0 p-6 text-right">
+                        <span class="text-xs text-goldLuxury font-bold tracking-wide">ملتقى سنوي</span>
+                        <h4 class="text-lg font-bold mt-1">الملتقى العربي لريادة الأعمال م2026</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفعاليات القادمة (Upcoming Events) -->
+    <section id="upcoming" class="py-20 bg-lightGray border-t border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-goldLuxury font-bold text-sm block mb-2">// فعاليات مرتقبة</span>
+            <h2 class="text-3xl font-black text-navyDark mb-6">المعارض والمؤتمرات القادمة</h2>
+            <p class="text-slate-500 text-sm mb-10">كونوا على استعداد للمشاركة والتسجيل في أحدث أحداثنا المنظمة قريباً.</p>
+            
+            <!-- كارت الحدث القادم -->
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-r-8 border-goldLuxury flex flex-col md:flex-row justify-between items-center text-right gap-6">
+                <div>
+                    <span class="bg-red-50 text-red-600 border border-red-200 px-3 py-1 text-xs font-bold rounded-md">قريباً جداً</span>
+                    <h3 class="text-xl font-bold text-navyDark mt-3 mb-2">معرض العاصمة الدولي للتطوير العقاري</h3>
+                    <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot ml-1"></i> مركز مصر للمعارض الدولية | القاهرة</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="bg-navyDark text-white p-3 rounded-lg text-center min-w-[70px]">
+                        <span class="block text-xl font-bold text-goldLuxury">15</span>
+                        <span class="text-[10px] text-slate-400">أغسطس</span>
+                    </div>
+                    <a href="#contact" class="bg-navyDark text-white hover:bg-goldLuxury hover:text-navyDark px-6 py-3 rounded-md font-bold text-sm transition">احجز مقعدك الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا (Contact Us) -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-goldLuxury font-bold text-sm block mb-2">// تواصل معنا</span>
+                <h2 class="text-3xl font-black text-navyDark">ابدأ التخطيط لحدثك القادم الآن</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- معلومات الاتصال الرسمية -->
+                <div class="space-y-6 text-right">
+                    <h3 class="text-xl font-bold text-navyDark mb-4">بيانات شركة الأسطورة الرسمية</h3>
+                    <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl">
+                        <div class="w-12 h-12 bg-navyDark text-goldLuxury flex items-center justify-center rounded-lg text-xl shadow"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span class="block text-xs text-slate-400">الهاتف والواتساب</span>
+                            <span class="font-bold text-navyDark" dir="ltr">01280809014</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl">
+                        <div class="w-12 h-12 bg-navyDark text-goldLuxury flex items-center justify-center rounded-lg text-xl shadow"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <span class="block text-xs text-slate-400">البريد الإلكتروني</span>
+                            <span class="font-bold text-navyDark">info@alostoura-events.com</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl">
+                        <div class="w-12 h-12 bg-navyDark text-goldLuxury flex items-center justify-center rounded-lg text-xl shadow"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div>
+                            <span class="block text-xs text-slate-400">المقر الرئيسي</span>
+                            <span class="font-bold text-navyDark">مصر، القناطر الخيرية / القاهرة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- استمارة إرسال طلب تواصل سريع -->
+                <form class="space-y-4 text-right bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">اسم المؤسسة / العميل</label>
+                        <input type="text" placeholder="أدخل الاسم بالكامل" class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-goldLuxury text-sm" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">رقم التواصل</label>
+                        <input type="tel" placeholder="رقم الهاتف" class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-goldLuxury text-sm" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">تفاصيل الفعالية المطلوبة</label>
+                        <textarea rows="4" placeholder="اكتب نوع المعرض أو المؤتمر وتاريخه المتوقع..." class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:border-goldLuxury text-sm" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full gold-gradient text-navyDark py-3 rounded-lg font-bold shadow-md hover:opacity-90 transition">إرسال طلب التخطيط</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (Footer) -->
+    <footer class="bg-navyDark text-slate-400 py-12 border-t border-goldLuxury/20 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-sm">جميع الحقوق محفوظة &copy; 2026 شركة الأسطورة لتنظيم المعارض والمؤتمرات.</p>
+            <div class="flex justify-center gap-6 mt-4 text-lg">
+                <a href="#" class="hover:text-goldLuxury"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-goldLuxury"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-goldLuxury"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-goldLuxury"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- سكربت Netlify Identity لتأكيد تسجيل الدخول في لوحة التحكم لاحقاً -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+          }
+        });
+      }
+    </script>
+</body>
+</html>
