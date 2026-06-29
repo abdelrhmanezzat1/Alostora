@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا | الأسطورة لتنظيم المعارض والمؤتمرات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { navyDark: '#0F172A', goldLuxury: '#D4AF37' } } } }
+    </script>
+    <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="bg-navyDark text-white border-b border-goldLuxury/30 sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="logo.png" alt="شعار الأسطورة" class="h-14 w-auto object-contain bg-white p-1 rounded-md">
+            </a>
+            <div class="hidden md:flex space-x-8 space-x-reverse text-sm font-semibold">
+                <a href="index.html" class="hover:text-goldLuxury transition">الرئيسية</a>
+                <a href="services.html" class="text-goldLuxury">خدماتنا</a>
+                <a href="portfolio.html" class="hover:text-goldLuxury transition">أعمالنا</a>
+                <a href="contact.html" class="hover:text-goldLuxury transition">اتصل بنا</a>
+            </div>
+            <a href="https://wa.me/201000468349" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2.5 rounded-md font-bold text-xs flex items-center gap-2 transition">
+                <i class="fa-brands fa-whatsapp text-lg"></i> واتساب مباشر
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-navyDark text-white py-16 text-center border-b-4 border-goldLuxury">
+        <h1 class="text-4xl font-black text-goldLuxury mb-4">خدماتنا الاحترافية</h1>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-right">
+            <div class="bg-white p-8 rounded-2xl shadow-md border-r-8 border-goldLuxury">
+                <div class="text-goldLuxury text-3xl mb-4"><i class="fa-solid fa-handshake-angle"></i></div>
+                <h3 class="font-bold text-xl text-navyDark mb-3">إدارة وتنظيم المؤتمرات الدولية</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">تخطيط الجداول الزمنية، التنسيق مع المتحدثين، إدارة الحشود، وإخراج الحدث بشكل فخم ورسمي.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md border-r-8 border-navyDark">
+                <div class="text-navyDark text-3xl mb-4"><i class="fa-solid fa-building-user"></i></div>
+                <h3 class="font-bold text-xl text-navyDark mb-3">تصميم وتجهيز أجنحة المعارض (Stands)</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">تنفيذ ديكورات مبتكرة ومخصصة للهويات التجارية باستخدام خامات خشبية ومعدنية ممتازة.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navyDark text-slate-400 py-8 text-center">
+        <p class="text-xs">جميع الحقوق محفوظة &copy; 2026 شركة الأسطورة.</p>
+    </footer>
+</body>
+</html>
